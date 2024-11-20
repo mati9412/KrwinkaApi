@@ -1,8 +1,7 @@
-﻿using Krwinka.Domain.Entities;
-using Krwinka.Infrastructure.Persistence;
-using System.Numerics;
+﻿namespace Krwinka.Infrastructure.Seeders;
 
-namespace Krwinka.Infrastructure.Seeders;
+using Krwinka.Domain.Entities;
+using Krwinka.Infrastructure.Persistence;
 
 internal class LabTestSeeder(KrwinkaDbContext dbContext) : ILabTestSeeder
 {

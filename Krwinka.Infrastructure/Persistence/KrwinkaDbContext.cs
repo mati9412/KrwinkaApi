@@ -1,7 +1,7 @@
-﻿using Krwinka.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿namespace Krwinka.Infrastructure.Persistence;
 
-namespace Krwinka.Infrastructure.Persistence;
+using Krwinka.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 internal class KrwinkaDbContext : DbContext
 {

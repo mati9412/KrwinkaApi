@@ -1,4 +1,4 @@
-
+using Krwinka.Application.Extensions;
 using Krwinka.Infrastructure.Extensions;
 using Krwinka.Infrastructure.Seeders;
 
@@ -16,6 +16,7 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddInfrastructure(builder.Configuration);
+        builder.Services.AddApplication();
         builder.Services.AddCors(
             options =>
             {
