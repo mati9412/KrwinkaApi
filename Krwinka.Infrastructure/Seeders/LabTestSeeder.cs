@@ -15,7 +15,6 @@ internal class LabTestSeeder(KrwinkaDbContext dbContext) : ILabTestSeeder
                 {
                     new LabTest
                     {
-                        Id = Guid.NewGuid(),
                         Name = "Morfologia",
                         Type = "EDTA",
                         Description = "Test",
@@ -25,7 +24,6 @@ internal class LabTestSeeder(KrwinkaDbContext dbContext) : ILabTestSeeder
                     },
                     new LabTest
                     {
-                        Id = Guid.NewGuid(),
                         Name = "AST",
                         Type = "Surowica",
                         Description = "Test",

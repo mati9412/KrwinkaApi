@@ -1,8 +1,8 @@
+namespace KrwinkaApi;
+
 using Krwinka.Application.Extensions;
 using Krwinka.Infrastructure.Extensions;
 using Krwinka.Infrastructure.Seeders;
-
-namespace KrwinkaApi;
 
 public class Program
 {

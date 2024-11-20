@@ -8,5 +8,8 @@ using Microsoft.EntityFrameworkCore;
 internal class LabTestsRepository(KrwinkaDbContext dbContext) : ILabTestsRepository
 {
     public async Task<IEnumerable<LabTest>> GetAllLabTestsAsync() => await dbContext.Labtests.ToListAsync();
-   
+    public async Task<LabTest?> GetLabTestAsync(int id)
+    {
+        return await dbContext.Labtests.FirstOrDefaultAsync(l => l.Id == id);
+    }
 }
