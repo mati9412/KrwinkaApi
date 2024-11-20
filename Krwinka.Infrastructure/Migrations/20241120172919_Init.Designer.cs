@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Krwinka.Infrastructure.Migrations
 {
     [DbContext(typeof(KrwinkaDbContext))]
-    [Migration("20241118181720_Init")]
+    [Migration("20241120172919_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -27,9 +27,11 @@ namespace Krwinka.Infrastructure.Migrations
 
             modelBuilder.Entity("Krwinka.Domain.Entities.LabTest", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
