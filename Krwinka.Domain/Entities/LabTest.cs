@@ -1,6 +1,6 @@
 ﻿namespace Krwinka.Domain.Entities;
 
-internal class LabTest
+public class LabTest
 {
     public Guid Id { get; set; }
     public string Name { get; set; } = default!;
